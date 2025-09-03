@@ -1,0 +1,21 @@
+{
+  "source": {
+    "kfp": {
+      "type":"gcp",
+      "host": "your_kubeflow_source_url_or_ip",
+      "service_account": "/path/to/your/google_service_account.json"
+    },
+    "docker": {
+      "repository":"your_docker_container_source_repository",
+    }
+  },
+  "destination": {
+    "kfp": {
+      "type":"agnostic",
+      "host": "your_kubeflow_destination_url_or_ip"
+    },
+    "docker": {
+      "repository":"your_docker_container_destination_repository",
+    }
+  }
+}
